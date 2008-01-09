@@ -1,0 +1,18 @@
+# http://module-build.sourceforge.net/META-spec.html
+#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
+name:         WordPress-Post
+version:      1.04
+version_from: lib/WordPress/Post.pm
+installdirs:  site
+requires:
+    Date::Simple:                  0
+    File::Type:                    0
+    Image::Magick:                 0
+    LEOCHARRE::CLI:                0
+    MIME::Base64:                  0
+    Smart::Comments:               0
+    XMLRPC::Lite:                  0
+    YAML:                          0
+
+distribution_type: module
+generated_by: ExtUtils::MakeMaker version 6.30
