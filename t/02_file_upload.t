@@ -3,7 +3,7 @@ use strict;
 use lib './lib';
 
 use WordPress::Post;
-use WordPress::CLI;
+use WordPress::CLIDeprecated;
 
 ok(1,'starting test.');
 
@@ -16,7 +16,7 @@ if( ! -f './t/wppost' ){
 
 else { 
 
-   my $conf = WordPress::CLI::_conf('./t/wppost');
+   my $conf = WordPress::CLIDeprecated::_conf('./t/wppost');
 
    my $w = WordPress::Post->new($conf);
 

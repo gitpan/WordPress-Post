@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               WordPress-Post
-version:            1.06
+version:            1.07
 abstract:           DEPRECATED see WordPress::CLI instead
 author:  []
 license:            unknown

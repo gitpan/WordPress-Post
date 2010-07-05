@@ -1,4 +1,4 @@
-package WordPress::CLI;
+package WordPress::CLIDeprecated;
 use strict;
 
 

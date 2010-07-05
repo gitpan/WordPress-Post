@@ -1,10 +1,9 @@
 #!/usr/bin/perl -w
 use strict;
-#use lib './lib';
+use lib './lib';
 use base 'LEOCHARRE::CLI';
-
 use WordPress::Post;
-use WordPress::CLI;
+use WordPress::CLIDeprecated;
 use Cwd;
 
 
@@ -13,7 +12,7 @@ my $o = gopts('D:t:i:c:U:p:P:T');
 
 ### $o
 
-my $c = WordPress::CLI::_conf();
+my $c = WordPress::CLIDeprecated::_conf();
 $c||={};
 for(qw(U P p)){
    $o->{$_} ||= $c->{$_};

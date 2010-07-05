@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Carp;
 use vars qw($VERSION);
-$VERSION = sprintf "%d.%02d", q$Revision: 1.6 $ =~ /(\d+)/g;
+$VERSION = sprintf "%d.%02d", q$Revision: 1.7 $ =~ /(\d+)/g;
 
 
 my @struct_possible_keys = qw(title
@@ -193,7 +193,6 @@ sub post_file {
 
 
 1;
-
 
 
 __END__

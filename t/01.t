@@ -4,9 +4,8 @@ use lib './lib';
 
 use WordPress::Post;
 
-use WordPress::CLI;
+use WordPress::CLIDeprecated;
 
-use Smart::Comments '###';
 
 ok(1,'starting test.');
 
@@ -16,7 +15,7 @@ if( ! -f './t/wppost' ){
 }
 else {
 
-   my $conf = WordPress::CLI::_conf('./t/wppost');
+   my $conf = WordPress::CLIDeprecated::_conf('./t/wppost');
    ok(1,'got testing conf ./t/wppost');
 
    ### $conf
