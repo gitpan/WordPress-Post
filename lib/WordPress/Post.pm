@@ -3,9 +3,9 @@ use base 'WordPress::Base';
 use strict;
 use warnings;
 use Carp;
-#use Smart::Comments '###';
 use vars qw($VERSION);
-$VERSION = sprintf "%d.%02d", q$Revision: 1.4 $ =~ /(\d+)/g;
+$VERSION = sprintf "%d.%02d", q$Revision: 1.6 $ =~ /(\d+)/g;
+
 
 my @struct_possible_keys = qw(title
 description
@@ -202,7 +202,7 @@ __END__
 
 =head1 NAME
 
-WordPress::Post
+WordPress::Post - DEPRECATED see WordPress::CLI instead
 
 =head1 SYNOPSIS
    
@@ -221,6 +221,8 @@ WordPress::Post
 
 
 =head1 DESCRIPTION
+
+This module is DEPRECATD. See L<WordPress::CLI> distribution instead.
 
 The module WordPress did not work for me.
 This one works.
@@ -298,7 +300,7 @@ Leo Charre leocharre at cpan dot org
 
 =head1 SEE ALSO
 
-WordPress::Base
+L<WordPress::CLI> - replacement
 
 =head1 INSTALLING AND TESTING
 
@@ -308,3 +310,24 @@ For testing you will need to have a word press blog set up.
 You must also know the proxy address, a username and password.
 
 =cut
+
+
+=head1 AUTHOR
+
+leocharre leocharre at gmail dot com
+
+=head1 COPYRIGHT
+
+Copyright (c) 2010 Leo Charre. All rights reserved.
+
+=head1 LICENSE
+
+This package is free software; you can redistribute it and/or modify it under the same terms as Perl itself, i.e., under the terms of the "Artistic License" or the "GNU General Public License".
+
+=head1 DISCLAIMER
+
+This package is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+See the "GNU General Public License" for more details.
+   
+   =cut

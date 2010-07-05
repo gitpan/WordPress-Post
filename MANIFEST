@@ -1,4 +1,6 @@
 t/99_cleanup.t
+Changes
+README
 t/image.jpg
 t/Test_Post_From_File.txt
 t/02_file_upload.t

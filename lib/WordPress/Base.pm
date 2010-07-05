@@ -1,4 +1,5 @@
-package WordPress::Base;
+package WordPress::Base; 
+# DEPRECATED
 use strict;
 use warnings;
 use Carp;
@@ -89,7 +90,7 @@ __END__
 
 =head1 NAME
 
-WordPress::Base - basic connection to wordpress via xmlrpc
+WordPress::Base - DEPRECATED basic connection to wordpress via xmlrpc
 
 =head1 DESCRIPTION
 
@@ -148,18 +149,35 @@ If you pass 'password' to constructor, it is prepopulated.
 Perl set/get method. Argument is string.
 If you pass 'poxy' to constructor, it is prepopulated.
 
-=head1 AUTHOR
-
-Leo Charre leocharre at cpan dot org
-
 =head1 SEE ALSO
 
 XMLRPC::Lite
 SOAP::Lite
 WordPress::Post
 
-WordPress
+WordPress::CLI - replacement
 
+=cut
+
+
+=head1 AUTHOR
+
+leocharre leocharre at gmail dot com
+
+=head1 COPYRIGHT
+
+Copyright (c) 2010 Leo Charre. All rights reserved.
+
+=head1 LICENSE
+
+This package is free software; you can redistribute it and/or modify it under the same terms as Perl itself, i.e., under the terms of the "Artistic License" or the "GNU General Public License".
+
+=head1 DISCLAIMER
+
+This package is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+See the "GNU General Public License" for more details.
+   
 =cut
 
 

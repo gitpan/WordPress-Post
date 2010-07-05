@@ -5,7 +5,6 @@ use base 'LEOCHARRE::CLI';
 
 use WordPress::Post;
 use WordPress::CLI;
-use Smart::Comments '###';
 use Cwd;
 
 
@@ -265,7 +264,7 @@ $w->post($struct) or die;
 
 =head1 NAME
 
-wppost - post to wordpress blog
+wppost - DEPRECATED post to wordpress blog
 
 =head1 DESCRIPTION
 
@@ -353,8 +352,9 @@ supported struct is...
 =head1 SEE ALSO
 
 WordPress::Post
-WordPress::CLI
 LEOCHARRE::CLI
 Image::Magick
+
+WordPress::CLI - replacement
 
 =cut

@@ -22,47 +22,4 @@ sub _conf {
 
 1;
 
-__END__
-
-=pod
-
-=head1 NAME
-
-WordPress::CLI
-
-=head1 PRIVATE METHODS
-
-_conf()
-
-_abs_wppost()
-
-=head1 DESCRIPTION
-
-This is used by wppost of WordPress::Post package.
-
-=head2 ~/.wppost
-
-Your yaml conf file should contain:
-
-   ---
-   U:username
-   P:password
-   p:proxy
-
-Example .wppost file:
-
-   ---
-   U: jim
-   P: wegjwgw
-   p: 'http://jim/xmlrpc.php'
-
-=head1 AUTHOR
-
-Leo Charre
-
-=head1 SEE ALSO
-
-WordPress::Post
-
-=cut
-
+# DEPRECATED- see distro WordPress::CLI instead
